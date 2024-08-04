@@ -1,3 +1,1 @@
-﻿  ConsoleApplication1.cpp
-C:\Users\mredw\Documents\GitHub\AverageTempCalc\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(22,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-  ConsoleApplication1.vcxproj -> C:\Users\mredw\Documents\GitHub\AverageTempCalc\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
+﻿  ConsoleApplication1.vcxproj -> C:\Users\mredw\Documents\GitHub\AverageTempCalc\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe

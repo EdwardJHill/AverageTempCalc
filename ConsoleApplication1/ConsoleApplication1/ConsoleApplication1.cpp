@@ -6,9 +6,12 @@
 
 int main()
 {
+    int x, y;
     std::cout << "Hello World!\n";
-    calculate(6, 22);
-    calculate(7, 23);
+    std::cin >> x;
+    std::cin >> y;
+    calculate(x, y);
+
 }
 //wakeup time and sleep time need to be reworked for people over the day cases
 float calculate(int wakeUpTime, int SleepTime)
@@ -19,7 +22,7 @@ float calculate(int wakeUpTime, int SleepTime)
         Total += fourth[i];
     }
    
-    float Avearge = Total / (SleepTime - wakeUpTime);
+    float Avearge = Total / (SleepTime - wakeUpTime + 1.0f);
     std::cout << Avearge <<"\n";
     return Avearge;
 }
