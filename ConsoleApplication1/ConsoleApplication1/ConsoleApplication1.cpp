@@ -22,9 +22,13 @@ float calculate(int wakeUpTime, int SleepTime)
         Total += fourth[i];
     }
    
-    float Avearge = Total / (SleepTime - wakeUpTime + 1.0f);
+    float Avearge = Total / (SleepTime - wakeUpTime);
     std::cout << Avearge <<"\n";
     return Avearge;
+}
+void PrepareAverages()
+{
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
