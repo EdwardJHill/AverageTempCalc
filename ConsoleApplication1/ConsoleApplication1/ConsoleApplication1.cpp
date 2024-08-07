@@ -6,11 +6,13 @@
 
 int main()
 {
+    PrepareAverages();
     int x, y;
     std::cout << "Hello World!\n";
     std::cin >> x;
     std::cin >> y;
     calculate(x, y);
+    
 
 }
 //wakeup time and sleep time need to be reworked for people over the day cases
@@ -19,7 +21,7 @@ float calculate(int wakeUpTime, int SleepTime)
     int Total = 0;
     for (int i = wakeUpTime; i <= SleepTime; i++)
     {
-        Total += fourth[i];
+        //Total += fourth[i];
     }
    
     float Avearge = Total / (SleepTime - wakeUpTime);
@@ -28,6 +30,15 @@ float calculate(int wakeUpTime, int SleepTime)
 }
 void PrepareAverages()
 {
+    for (int i = 0; i < cols; i++)
+    {
+        int Total = 0;
+        for (int j = 0; j < rows; j++)
+        {
+            Total += temps[j][i];
+        }
+        averages[i] = Total / rows;
+    }
 
 }
 
