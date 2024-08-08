@@ -18,12 +18,15 @@ int main()
 //wakeup time and sleep time need to be reworked for people over the day cases
 float calculate(int wakeUpTime, int SleepTime)
 {
-    int Total = 0;
-    for (int i = wakeUpTime; i <= SleepTime; i++)
+    if (SleepTime > wakeUpTime)
     {
-        //Total += fourth[i];
+        //SleepTime = 24 - SleepTime
     }
-   
+    int Total = 0;
+    for (int i = wakeUpTime; i < SleepTime; i++)
+    {
+        Total += averages[i];
+    }
     float Avearge = Total / (SleepTime - wakeUpTime);
     std::cout << Avearge <<"\n";
     return Avearge;
